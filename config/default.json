@@ -1,0 +1,10 @@
+{
+  "app": {
+    "ack_endpoints": [
+      "http://192.168.0.1/ack"
+    ],
+    "ackall_endpoints": [
+      "http://192.168.0.1/ackall"
+    ]
+  }
+}
