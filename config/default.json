@@ -1,7 +1,10 @@
 {
   "app": {
     "ack_endpoints": [
-      "http://192.168.0.1/ack"
+      {
+        "url": "http://192.168.0.1/ack",
+        "field_name": "value1"
+      }
     ],
     "ackall_endpoints": [
       "http://192.168.0.1/ackall"

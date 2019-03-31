@@ -25,12 +25,12 @@ export default class Zaqa {
 		else if (cmd[0] === "ack")
 		{
 			config.get('app.ack_endpoints').forEach((e) => {
-				axios.get(e, {params: {key: cmd[1]}}).then((res) => {
+				axios.get(e.url, {params: {[e.field_name]: cmd[1]}}).then((res) => {
 					console.log(res.data);
-					console.log("called ack endpoint " + e);
+					console.log("called ack endpoint " + e.url);
 				}).catch((err) => {
 					console.log(err);
-					console.log("error calling ack endpoint " + e);
+					console.log("error calling ack endpoint " + e.url);
 				});
 			});
 		}
